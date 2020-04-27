@@ -1,6 +1,8 @@
 from selenium import webdriver
 import sys
 import os
+import subprocess
+import random
 
 
 driver=webdriver.Chrome()
@@ -32,8 +34,9 @@ repoName.send_keys(name)
 description=driver.find_element_by_xpath('//*[@id="repository_description"]')
 description.send_keys('git hub repositary for project '+name)
 
+readme=driver.find_element_by_xpath('//*[@id="repository_auto_init"]')
+readme.click()
+
 readme=driver.find_element_by_xpath('//*[@id="new_repository"]/div[5]/button')
 readme.click()
 
-createRepoButton=driver.find_elements_by_css_selector('button.first-in-line')
-createRepoButton.click()
