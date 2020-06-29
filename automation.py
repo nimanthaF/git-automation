@@ -12,10 +12,10 @@ signInButton=driver.find_element_by_xpath('/html/body/div[1]/header/div/div[2]/d
 signInButton.click()
 
 username=driver.find_element_by_xpath('//*[@id="login_field"]')
-username.send_keys('nimanthafernando95@gmail.com')
+username.send_keys('xxxxxxxx.com')
 
 password=driver.find_element_by_xpath('//*[@id="password"]')
-password.send_keys('0313313510abc')
+password.send_keys('xxxxxxxx')
 
 signInConfirm=driver.find_element_by_xpath('//*[@id="login"]/form/div[4]/input[9]')
 signInConfirm.click()
